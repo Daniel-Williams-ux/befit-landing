@@ -8,7 +8,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-white bg-opacity-80 backdrop-blur-lg shadow-md">
+    <header className="fixed top-0 left-0 w-full z-50 bg-white bg-opacity-80 backdrop-blur-lg ">
       <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 flex items-center justify-between h-16">
         {/* Logo */}
         <div className="text-2xl font-semibold text-gray-900">
@@ -42,7 +42,7 @@ const Header = () => {
 
         {/* Contact Button - Visible on larger screens */}
         <div className="hidden md:flex">
-          <Link href="/contact" className="bg-white text-headerColor px-4 py-2 border border-headerColor rounded-lg hover:bg-blue-500 hover:text-white transition-colors">
+          <Link href="/about" className="bg-white text-headerColor px-4 py-2 border border-headerColor rounded-lg hover:bg-blue-500 hover:text-white transition-colors">
             Join our community
           </Link>
         </div>
