@@ -128,13 +128,13 @@ const About = () => {
               </Link>
               <div className="flex space-x-4">
                 <Link href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                  <FaInstagram className="h-6 w-6 text-gray-600 hover:text-blue-600 transition-colors" />
+                  <FaInstagram className="h-6 w-6 text-white hover:text-headerColor transition-colors" />
                 </Link>
                 <Link href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-                  <FaTwitter className="h-6 w-6 text-gray-600 hover:text-blue-600 transition-colors" />
+                  <FaTwitter className="h-6 w-6 text-white hover:text-headerColor transition-colors" />
                 </Link>
                 <Link href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-                  <FaFacebook className="h-6 w-6 text-gray-600 hover:text-blue-600 transition-colors" />
+                  <FaFacebook className="h-6 w-6 text-white hover:text-headerColor transition-colors" />
                 </Link>
               </div>
             </div>
