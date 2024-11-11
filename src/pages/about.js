@@ -80,7 +80,7 @@ const About = () => {
 
       {/* Section 2: About Image */}
       <section className="flex justify-center">
-        <Image src={AboutImage} alt="About Us Image" className="rounded-lg shadow-lg max-w-full" />
+        <Image src={AboutImage} alt="About Us Image" className="rounded-lg shadow-lg max-w-full" fetchpriority="high"/>
       </section>
 
       {/* Section 3: What Defines Us */}
