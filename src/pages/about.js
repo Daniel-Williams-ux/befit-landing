@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { FaInstagram, FaTwitter, FaFacebook } from 'react-icons/fa';
 
 // Image imports
 import AboutImage from '/public/images/about-image.jpg';
@@ -50,14 +51,14 @@ const About = () => {
   ];
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 space-y-16">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 space-y-16 mt-20">
       
       {/* Section 1: Intro Text */}
-      <section className="text-center space-y-4 sm:space-y-6 mt-10 sm:mt-20">
-        <h2 className="text-xl sm:text-3xl lg:text-3xl font-medium font-dmSans leading-snug sm:leading-10 text-gray-800">
+      <section className="text-center space-y-4 sm:space-y-6 lg:mb-10 mt-10 sm:mt-20">
+        <h2 className="text-xl sm:text-3xl lg:text-3xl font-medium font-dmSans leading-snug sm:leading-10 text-black">
           At BefitApp, we believe that fitness is more than just a workout—it's a lifestyle achievable for everyone, no matter where you are on your journey.
         </h2>
-        <Link href="/career" className="text-sm sm:text-base text-headerColor font-dmSans hover:text-blue-800 font-medium pb-8">
+        <Link href="/career" className="text-sm sm:text-base text-headerColor font-dmSans hover:text-blue-800 font-medium">
           See All Open Roles
         </Link>
       </section>
@@ -99,20 +100,20 @@ const About = () => {
       </section>
 
       {/* Footer Section */}
-      <footer className="bg-gray-100 py-10 sm:py-12 text-gray-800 space-y-8 sm:space-y-12">
+      <footer className="bg-footColor py-10 sm:py-12 text-white space-y-8 sm:space-y-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Top Footer */}
           <div className="flex flex-col md:flex-row justify-between items-start space-y-6 sm:space-y-0">
             <div>
-              <h4 className="text-base sm:text-lg font-bold leading-snug">
+              <h4 className="lg:text-6xl sm:text-lg font-semibold font-dmSans leading-snug">
                 Enterprise <br/> usage of <br/> Nutrition API
               </h4>
             </div>
             <div className="text-left md:text-right space-y-4 sm:space-y-0">
-              <p className="text-sm sm:text-base">
-                Leverage our database to equip your restaurant with accurate nutritional data.
+              <p className="text-base sm:text-base pb-3">
+                Leverage our database to equip your <br/> restaurant with accurate nutritional data.
               </p>
-              <button className="bg-blue-600 text-white text-sm px-4 py-2 rounded-lg hover:bg-blue-700">
+              <button className="bg-white text-headerColor text-sm px-10 py-2 rounded-lg hover:bg-headerColor hover:text-white">
                 Send us a mail
               </button>
             </div>
@@ -126,30 +127,36 @@ const About = () => {
                 <Image src="/images/logo.png" alt="BeFit Logo" width={100} height={40} className="h-10 w-auto" />
               </Link>
               <div className="flex space-x-4">
-                <Link href="#" className="text-sm">Instagram</Link>
-                <Link href="#" className="text-sm">Twitter</Link>
-                <Link href="#" className="text-sm">Facebook</Link>
+                <Link href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                  <FaInstagram className="h-6 w-6 text-gray-600 hover:text-blue-600 transition-colors" />
+                </Link>
+                <Link href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                  <FaTwitter className="h-6 w-6 text-gray-600 hover:text-blue-600 transition-colors" />
+                </Link>
+                <Link href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                  <FaFacebook className="h-6 w-6 text-gray-600 hover:text-blue-600 transition-colors" />
+                </Link>
               </div>
             </div>
 
             {/* Address */}
             <div>
-              <h4 className="font-semibold text-sm sm:text-base">Address</h4>
-              <p className="text-sm">123 Fitness St, Healthy City, USA</p>
+              <h4 className="font-normal font-dmSans text-lg sm:text-base">Address</h4>
+              <p className="text-sm font-light font-dmSans">123 Fitness St, Healthy City, USA</p>
             </div>
 
             {/* Contact Info */}
             <div>
-              <h4 className="font-semibold text-sm sm:text-base">Call us</h4>
-              <p className="text-sm">+123-456-7890</p>
-              <p className="text-sm">+098-765-4321</p>
-              <p className="text-sm">Email: contact@befitapp.com</p>
+              <h4 className="font-normal font-dmSans text-lg sm:text-base">Call us</h4>
+              <p className="text-sm font-light font-dmSans">+123-456-7890</p>
+              <p className="text-sm font-light font-dmSans">+098-765-4321</p>
+              <p className="text-sm font-light font-dmSans">Email: contact@befitapp.com</p>
             </div>
 
             {/* Policies */}
             <div>
-              <h4 className="font-semibold text-sm sm:text-base">Our Policies</h4>
-              <ul className="space-y-1 text-sm">
+              <h4 className="font-normal font-dmSans text-lg sm:text-base">Our Policies</h4>
+              <ul className="space-y-1 text-sm font-light font-dmSans">
                 <li><Link href="#">Privacy Policy</Link></li>
                 <li><Link href="#">Terms of Use</Link></li>
                 <li><Link href="#">Refund Policy</Link></li>

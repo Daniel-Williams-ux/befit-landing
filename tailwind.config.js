@@ -11,6 +11,7 @@ module.exports = {
         headerColor: '#8C52FF',
         secColor: '#824DED1A',
         secColor2: '#082552',
+        footColor: '#E15A5A',
       },
       fontFamily: {
         dmSans: ['DM Sans', 'sans-serif'],  // Adds DM Sans as the default sans font
