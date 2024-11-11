@@ -13,6 +13,20 @@ import ValueImage5 from '/public/images/value5.jpg';
 import ValueImage6 from '/public/images/value6.jpg';
 import TeamImage1 from '/public/images/team1.jpg';
 import TeamImage2 from '/public/images/team2.jpg';
+import TeamImage3 from '/public/images/team3.jpg';
+import TeamImage4 from '/public/images/team4.jpg';
+import TeamImage5 from '/public/images/team5.jpg';
+import TeamImage6 from '/public/images/team6.jpg';
+import TeamImage7 from '/public/images/team7.jpg';
+import TeamImage8 from '/public/images/team8.jpg';
+import TeamImage9 from '/public/images/team9.jpg';
+import TeamImage10 from '/public/images/team10.jpg';
+import TeamImage11 from '/public/images/team11.jpg';
+import TeamImage12 from '/public/images/team12.jpg';
+import TeamImage13 from '/public/images/team13.jpg';
+import TeamImage14 from '/public/images/team14.jpg';
+import TeamImage15 from '/public/images/team15.jpg';
+import TeamImage16 from '/public/images/team16.jpg';
 // Add additional team images as necessary
 
 const About = () => {
@@ -88,13 +102,33 @@ const About = () => {
           ))}
         </div>
       </section>
-
       {/* Section 4: Team Section */}
       <section className="text-center space-y-6 sm:space-y-8">
         <h3 className="text-xl sm:text-2xl font-semibold text-gray-800">The right skills, the right people.</h3>
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6">
-          {[TeamImage1, TeamImage2, /* add more team images as needed */].map((imgSrc, index) => (
-            <Image key={index} src={imgSrc} alt={`Team member ${index + 1}`} className="rounded-lg shadow-md max-w-full"/>
+          {[
+            { image: TeamImage1, name: "Oghenetega Orherhe", title: "Customer Experience" },
+            { image: TeamImage2, name: "Yarmirama Ashama", title: "Product" },
+            { image: TeamImage3, name: "Bukola Olore", title: "Finance" },
+            { image: TeamImage4, name: "Ifedolapo Oseni", title: "Growth" },
+            { image: TeamImage5, name: "Busola Jeje, CFA", title: "Portfolio Management" },
+            { image: TeamImage6, name: "Obasola Akintola", title: "Growth" },
+            { image: TeamImage7, name: "Precious Ineh", title: "Customer Experience" },
+            { image: TeamImage8, name: "Omolade Marquis", title: "Growth" },
+            { image: TeamImage9, name: "Oluwadamilare Bello", title: "Growth" },
+            { image: TeamImage10, name: "Feyisayo Sonubi", title: "Design" },
+            { image: TeamImage11, name: "Oluwagbemi Awosusi", title: "HNI & Corporates" },
+            { image: TeamImage12, name: "Oludamola Olubajo", title: "Growth" },
+            { image: TeamImage13, name: "Razaq Ahmed, CFA", title: "CEO/Co-Founder" },
+            { image: TeamImage14, name: "Timothy Obeisun", title: "Engineering" },
+            { image: TeamImage15, name: "Esther Sanda", title: "Legal & Compliance" },
+            { image: TeamImage16, name: "Ebenezer Akintomide", title: "People" },
+          ].map((teamMember, index) => (
+            <div key={index} className="flex flex-col items-center text-center">
+              <Image src={teamMember.image} alt={`Team member ${index + 1}`} className="rounded-lg shadow-md max-w-full" />
+              <h4 className="mt-2 text-sm sm:text-base font-dmSans font-semibold text-secColor2">{teamMember.name}</h4>
+              <p className="text-xs sm:text-sm text-secColor2 font-dmSans">{teamMember.title}</p>
+            </div>
           ))}
         </div>
       </section>
