@@ -70,12 +70,13 @@ const About = () => {
       {/* Section 1: Intro Text */}
       <section className="text-center space-y-4 sm:space-y-6 lg:mb-10 mt-10 sm:mt-20">
         <h2 className="text-xl sm:text-3xl lg:text-3xl font-medium font-dmSans leading-snug sm:leading-10 text-black">
-          At BefitApp, we believe that fitness is more than just a workout—it's a lifestyle achievable for everyone, no matter where you are on your journey.
+          At BefitApp, we believe that fitness is more than just a workout—it&#39;s a lifestyle achievable for everyone, no matter where you are on your journey.
         </h2>
         <Link href="/career" className="text-sm sm:text-base text-headerColor font-dmSans hover:text-blue-800 font-medium">
           See All Open Roles
         </Link>
       </section>
+
 
       {/* Section 2: About Image */}
       <section className="flex justify-center">
