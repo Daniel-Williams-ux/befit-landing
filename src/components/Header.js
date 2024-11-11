@@ -42,7 +42,7 @@ const Header = () => {
 
         {/* Contact Button - Visible on larger screens */}
         <div className="hidden md:flex">
-          <Link href="/about" className="bg-white text-headerColor px-4 py-2 border border-headerColor rounded-lg hover:bg-blue-500 hover:text-white transition-colors">
+          <Link href="/about" className="bg-white text-headerColor px-4 py-2 border border-headerColor rounded-lg hover:bg-headerColor hover:text-white transition-colors">
             Join our community
           </Link>
         </div>
