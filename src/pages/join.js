@@ -38,7 +38,7 @@ const JoinCommunity = () => {
 
       {/* Section 2: Image */}
       <section className="flex justify-center">
-        <Image src={AppImage} alt="BeFit App Preview" className="rounded-lg shadow-lg max-w-full" />
+        <Image src={AppImage} alt="BeFit App Preview" className="rounded-lg shadow-lg max-w-full" fetchpriority="high"/>
       </section>
 
       {/* Section 3: Trusted by the Best */}

@@ -94,7 +94,7 @@ const About = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 mt-6 sm:mt-8">
           {valuesData.map((value, index) => (
             <div key={index} className="bg-white border rounded-lg shadow-lg p-4 text-center">
-              <Image src={value.image} alt={value.title} className="rounded-lg mb-2 sm:mb-4"/>
+              <Image src={value.image} alt={value.title} className="rounded-lg mb-2 sm:mb-4" fetchpriority="high"/>
               <h4 className="text-sm sm:text-lg font-semibold text-secColor2">{value.title}</h4>
               <p className="text-xs sm:text-sm text-gray-600">
                 {value.description}
