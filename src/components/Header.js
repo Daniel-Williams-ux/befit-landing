@@ -51,15 +51,15 @@ const Header = () => {
 
       {/* Mobile Menu Overlay */}
       {isMenuOpen && (
-        <div className="md:hidden bg-white font-semibold bg-opacity-90 backdrop-blur-lg absolute top-16 left-0 w-full shadow-md z-40">
+        <div className="md:hidden bg-white font-dmSans font-semibold backdrop-blur-lg absolute top-16 left-0 w-full shadow-md z-40">
           <nav className="flex flex-col items-center space-y-4 py-6">
             <Link href="/" className="text-gray-700 hover:text-gray-900" onClick={() => setIsMenuOpen(false)}>Home</Link>
             <Link href="/about" className="text-gray-700 hover:text-gray-900" onClick={() => setIsMenuOpen(false)}>About</Link>
             <Link href="/portfolio" className="text-gray-700 hover:text-gray-900" onClick={() => setIsMenuOpen(false)}>Portfolio</Link>
             <Link href="/services" className="text-gray-700 hover:text-gray-900" onClick={() => setIsMenuOpen(false)}>Services</Link>
             <Link href="/contact" className="text-gray-700 hover:text-gray-900" onClick={() => setIsMenuOpen(false)}>Contact</Link>
-            <Link href="/contact" className="bg-gray-900 text-white px-4 py-2 rounded-lg hover:bg-gray-700" onClick={() => setIsMenuOpen(false)}>
-              Get in Touch
+            <Link href="/join" className="bg-white text-headerColor px-4 py-2 border border-headerColor rounded-lg hover:bg-headerColor hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>
+              Join our community
             </Link>
           </nav>
         </div>
