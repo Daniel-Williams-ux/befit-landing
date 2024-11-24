@@ -1,4 +1,3 @@
-// src/pages/_document.js
 import { Html, Head, Main, NextScript } from 'next/document';
 
 export default function Document() {
@@ -23,10 +22,9 @@ export default function Document() {
         <meta name="twitter:creator" content="@BeFit90524246" />
         <meta name="twitter:site" content="@BeFit90524246" />
 
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-        <link rel="icon" type="image/x-icon" sizes="32x32" href="/favicon.icon" />
-        <link rel="icon" type="image/x-icon" sizes="16x16" href="/favicon.icon" />
-        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 
         {/* Language Alternate Links */}
         <link rel="alternate" href="https://befitweb1.netlify.app/fr/" hreflang="fr-FR" />
