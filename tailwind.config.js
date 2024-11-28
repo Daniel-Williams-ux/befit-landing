@@ -15,6 +15,9 @@ module.exports = {
         subtext: '#5E5B63',
         downloadColor: '#12141D',
         befitRed: '#E15A5A',
+        careerColor: '#824DED',
+        gridText: '#0C0A09',
+        hireColor: '#AEB9CC',
       },
       fontFamily: {
         dmSans: ['DM Sans', 'sans-serif'],  // Adds DM Sans as the default sans font
