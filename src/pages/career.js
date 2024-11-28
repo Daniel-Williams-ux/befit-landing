@@ -134,7 +134,7 @@ export default function CareerPage() {
   <div className="space-y-8">
     {/* Section Title */}
     <h3 className="text-2xl sm:text-3xl font-medium font-dmSans text-gridText text-left">
-      What’s behind a great product? <br /> An even greater team
+      What&#39;s behind a great product? <br /> An even greater team
     </h3>
     <p className="text-left text-sm font-medium font-dmSans text-gridText">
       Our currency is collaboration. Our work, a blend of ideas and efforts. <br />
@@ -240,7 +240,7 @@ export default function CareerPage() {
           <h3 className="text-white text-2xl sm:text-4xl font-dmSans font-medium pt-16">How We Hire</h3>
           {/* Subtitle */}
           <p className="text-white text-base font-dmSans font-normal">
-            You’ve heard recruiters spend 6 seconds on a resume? Well, we don’t. <br />
+            You&#39;ve heard recruiters spend 6 seconds on a resume? Well, we don&#39;t. <br />
             We give every application the same time and consideration.
           </p>
 
