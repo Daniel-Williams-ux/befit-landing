@@ -342,7 +342,7 @@ export default function CareerPage() {
       <div className=" flex flex-col lg:flex-row lg:justify-between lg:items-center lg:space-x-8 mx-4 sm:mx-8 lg:mx-60 space-y-8 lg:space-y-0">
   {/* <!-- Left Side: Text --> */}
   <div className="text-center lg:text-left">
-    <h2 className="text-2xl sm:text-3xl font-bold">Join Our Circle</h2>
+    <h2 className="text-2xl sm:text-4xl text-circleText font-dmSans font-medium">Join Our Circle</h2>
   </div>
 
   {/* Job Listings */}
