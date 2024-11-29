@@ -55,9 +55,9 @@ const Header = () => {
           <nav className="flex flex-col items-center space-y-4 py-6">
             <Link href="/" className="text-gray-700 hover:text-gray-900" onClick={() => setIsMenuOpen(false)}>Home</Link>
             <Link href="/about" className="text-gray-700 hover:text-gray-900" onClick={() => setIsMenuOpen(false)}>About</Link>
-            <Link href="/portfolio" className="text-gray-700 hover:text-gray-900" onClick={() => setIsMenuOpen(false)}>Portfolio</Link>
-            <Link href="/services" className="text-gray-700 hover:text-gray-900" onClick={() => setIsMenuOpen(false)}>Services</Link>
-            <Link href="/contact" className="text-gray-700 hover:text-gray-900" onClick={() => setIsMenuOpen(false)}>Contact</Link>
+            <Link href="/career" className="text-gray-700 hover:text-gray-900" onClick={() => setIsMenuOpen(false)}>Career</Link>
+            <Link href="/pricing" className="text-gray-700 hover:text-gray-900" onClick={() => setIsMenuOpen(false)}>Pricing</Link>
+            <Link href="/resources" className="text-gray-700 hover:text-gray-900" onClick={() => setIsMenuOpen(false)}>Resources</Link>
             <Link href="/join" className="bg-white text-headerColor px-4 py-2 border border-headerColor rounded-lg hover:bg-headerColor hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>
               Join our community
             </Link>
