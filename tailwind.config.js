@@ -18,6 +18,10 @@ module.exports = {
         careerColor: '#824DED',
         gridText: '#0C0A09',
         hireColor: '#AEB9CC',
+        circleText: "#082552",
+        circleColor: "#DED9F3",
+        circlebg: "#F4F8FC",
+        hybridColor: "#6C82A3",
       },
       fontFamily: {
         dmSans: ['DM Sans', 'sans-serif'],  // Adds DM Sans as the default sans font

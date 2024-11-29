@@ -339,6 +339,60 @@ export default function CareerPage() {
           </div>
         </div>
       </section>
+      <div className=" flex flex-col lg:flex-row lg:justify-between lg:items-center lg:space-x-8 mx-4 sm:mx-8 lg:mx-60 space-y-8 lg:space-y-0">
+  {/* <!-- Left Side: Text --> */}
+  <div className="text-center lg:text-left">
+    <h2 className="text-2xl sm:text-3xl font-bold">Join Our Circle</h2>
+  </div>
+
+  {/* Job Listings */}
+  <div className="flex flex-col space-y-8 w-full lg:w-auto">
+    {/* <!-- Div 1: Software Engineer (Frontend) --> */}
+    <div className="text-center bg-circlebg p-4 rounded-lg shadow-md flex justify-between items-center">
+      <div>
+        <h3 className="text-lg sm:text-xl font-semibold">Software Engineer (Frontend)</h3>
+        <div className="text-circleText text-left mt-2 text-sm">Engineering</div>
+      </div>
+      <div className="text-xs text-hybridColor text-right">
+        Full Time • Hybrid
+      </div>
+    </div>
+
+    {/* <!-- Div 2: Software Engineer (Backend) --> */}
+    <div className="text-center bg-circlebg p-4 rounded-lg shadow-md flex justify-between items-center">
+      <div>
+        <h3 className="text-lg sm:text-xl font-semibold">Software Engineer (Backend)</h3>
+        <div className="text-circleText text-left mt-2 text-sm">Engineering</div>
+      </div>
+      <div className="text-xs text-hybridColor text-right">
+        Full Time • Hybrid
+      </div>
+    </div>
+
+    {/* <!-- Div 3: Product Manager --> */}
+    <div className="text-center bg-circlebg p-4 rounded-lg shadow-md flex justify-between items-center">
+      <div>
+        <h3 className="text-lg sm:text-xl font-semibold">Product Manager</h3>
+        <div className="text-circleText text-left mt-2 text-sm">Product</div>
+      </div>
+      <div className="text-xs text-hybridColor text-right">
+        Full Time • Hybrid
+      </div>
+    </div>
+
+    {/* <!-- Div 4: UX/UI Designer --> */}
+    <div className="text-center bg-circlebg p-4 rounded-lg shadow-md flex justify-between items-center">
+      <div>
+        <h3 className="text-lg sm:text-xl font-semibold">UX/UI Designer</h3>
+        <div className="text-circleText text-left mt-2 text-sm">Design</div>
+      </div>
+      <div className="text-xs text-hybridColor text-right">
+        Full Time • Hybrid
+      </div>
+    </div>
+  </div>
+</div>
+
 
     </main>
   );
