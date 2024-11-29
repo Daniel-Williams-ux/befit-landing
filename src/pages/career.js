@@ -1,5 +1,8 @@
 import Image from 'next/image';
 import { useState } from 'react';
+import Link from 'next/link';
+import { FaInstagram, FaTwitter, FaFacebook } from 'react-icons/fa';
+
 
 export default function CareerPage() {
 
@@ -393,6 +396,112 @@ export default function CareerPage() {
   </div>
 </div>
 
+<section className="py-12 px-4 md:px-16 lg:px-32 mt-28">
+  <h2 className="text-center text-circleText text-2xl sm:text-4xl font-medium font-dmSans mb-8">
+    Questions you may have
+  </h2>
+
+  <div className="space-y-4 max-w-3xl mx-auto mt-16">
+    {/* Question 1 */}
+    <div className="flex justify-between items-center border-b pb-4">
+      <p className="text-questionColor font-dmSans font-medium text-sm sm:text-2xl cursor-pointer hover:underline">
+        Do you accept contract workers or placements?
+      </p>
+      <span className="text-xl text-circleText h-5 font-bold cursor-pointer">+</span>
+    </div>
+
+    {/* Question 2 */}
+    <div className="flex justify-between items-center border-b pb-4">
+      <p className="text-questionColor font-dmSans font-medium text-sm sm:text-2xl cursor-pointer hover:underline">
+        Do you have a graduate trainee scheme?
+      </p>
+      <span className="text-xl text-circleText h-5 font-bold cursor-pointer">+</span>
+    </div>
+
+    {/* Question 3 */}
+    <div className="flex justify-between items-center border-b pb-4">
+      <p className="text-questionColor font-dmSans font-medium text-sm sm:text-2xl cursor-pointer hover:underline">
+        I saw a role recently but can’t find it anymore. Can I still apply?
+      </p>
+      <span className="text-xl text-circleText h-5 font-bold cursor-pointer">+</span>
+    </div>
+
+    {/* Question 4 */}
+    <div className="flex justify-between items-center border-b pb-4">
+      <p className="text-questionColor font-dmSans font-medium text-sm sm:text-2xl cursor-pointer hover:underline">
+        I am a recruiter, can we work together?
+      </p>
+      <span className="text-xl text-circleText h-5 font-bold cursor-pointer">+</span>
+    </div>
+  </div>
+</section>
+
+{/* Footer Section */}
+<footer className="max-w-7xl mx-auto bg-footColor py-10 sm:py-12 text-white space-y-8 sm:space-y-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Top Footer */}
+          <div className="flex flex-col md:flex-row justify-between items-start space-y-6 sm:space-y-0">
+            <div>
+              <h4 className="lg:text-6xl sm:text-lg font-semibold font-dmSans leading-snug">
+                Enterprise <br/> usage of <br/> Nutrition API
+              </h4>
+            </div>
+            <div className="text-left md:text-right space-y-4 sm:space-y-0">
+              <p className="text-base sm:text-base pb-3">
+                Leverage our database to equip your <br/> restaurant with accurate nutritional data.
+              </p>
+              <button className="bg-white text-headerColor text-sm px-10 py-2 rounded-lg hover:bg-headerColor hover:text-white">
+                Send us a mail
+              </button>
+            </div>
+          </div>
+
+          {/* Bottom Footer */}
+          <div className="flex flex-col md:flex-row justify-between mt-8 sm:mt-12 space-y-8 md:space-y-0 md:space-x-8">
+            {/* Logo and Socials */}
+            <div className="space-y-2">
+              <Link href="/">
+                <Image src="/images/logo.png" alt="BeFit Logo" width={100} height={40} className="h-10 w-auto" />
+              </Link>
+              <div className="flex space-x-4">
+                <Link href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                  <FaInstagram className="h-6 w-6 text-white hover:text-headerColor transition-colors" />
+                </Link>
+                <Link href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                  <FaTwitter className="h-6 w-6 text-white hover:text-headerColor transition-colors" />
+                </Link>
+                <Link href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                  <FaFacebook className="h-6 w-6 text-white hover:text-headerColor transition-colors" />
+                </Link>
+              </div>
+            </div>
+
+            {/* Address */}
+            <div>
+              <h4 className="font-normal font-dmSans text-lg sm:text-base">Address</h4>
+              <p className="text-sm font-light font-dmSans">123 Fitness St, Healthy City, USA</p>
+            </div>
+
+            {/* Contact Info */}
+            <div>
+              <h4 className="font-normal font-dmSans text-lg sm:text-base">Call us</h4>
+              <p className="text-sm font-light font-dmSans">+123-456-7890</p>
+              <p className="text-sm font-light font-dmSans">+098-765-4321</p>
+              <p className="text-sm font-light font-dmSans">Email: contact@befitapp.com</p>
+            </div>
+
+            {/* Policies */}
+            <div>
+              <h4 className="font-normal font-dmSans text-lg sm:text-base">Our Policies</h4>
+              <ul className="space-y-1 text-sm font-light font-dmSans">
+                <li><Link href="#">Privacy Policy</Link></li>
+                <li><Link href="#">Terms of Use</Link></li>
+                <li><Link href="#">Refund Policy</Link></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
 
     </main>
   );
