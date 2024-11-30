@@ -43,6 +43,13 @@ const Header = () => {
           </Link>
         </div>
 
+         {/* Contact Button - Visible on larger screens */}
+         <div className="hidden md:flex">
+          <Link href="/login" className="bg-white text-headerColor px-4 py-2 border border-headerColor rounded-lg hover:bg-headerColor hover:text-white transition-colors">
+            Login
+          </Link>
+        </div>
+
         {/* Mobile Menu Button */}
         <button className="md:hidden text-gray-900 focus:outline-none" onClick={() => setIsMenuOpen(!isMenuOpen)}>
           {isMenuOpen ? <XMarkIcon className="h-6 w-6" /> : <Bars3Icon className="h-6 w-6" />}
@@ -61,6 +68,7 @@ const Header = () => {
             <Link href="/join" className="bg-white text-headerColor px-4 py-2 border border-headerColor rounded-lg hover:bg-headerColor hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>
               Join our community
             </Link>
+            <Link href="/login" className="text-gray-700 hover:text-gray-900 border rounded-lg px-4 py-2" onClick={() => setIsMenuOpen(false)}>Login</Link>
           </nav>
         </div>
       )}
