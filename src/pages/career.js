@@ -26,7 +26,7 @@ export default function CareerPage() {
           </h1>
           <a
             href="#open-roles"
-            className="text-headerColor text-base hover:underline font-semibold p-28"
+            className="text-headerColor text-sm sm:text-xs hover:underline font-semibold p-28"
           >
             SEE ALL OPEN ROLES
           </a>

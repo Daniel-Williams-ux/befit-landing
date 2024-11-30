@@ -43,9 +43,9 @@ const Header = () => {
           </Link>
         </div>
 
-         {/* Contact Button - Visible on larger screens */}
+         {/* Login Button - Visible on larger screens */}
          <div className="hidden md:flex">
-          <Link href="/login" className="bg-white text-headerColor px-4 py-2 border border-headerColor rounded-lg hover:bg-headerColor hover:text-white transition-colors">
+          <Link href="/login" className="bg-loginColor font-dmSans font-medium text-white text-base px-9 py-2 border rounded-full hover:bg-red-700 hover:text-white transition-colors">
             Login
           </Link>
         </div>
@@ -68,7 +68,7 @@ const Header = () => {
             <Link href="/join" className="bg-white text-headerColor px-4 py-2 border border-headerColor rounded-lg hover:bg-headerColor hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>
               Join our community
             </Link>
-            <Link href="/login" className="text-gray-700 hover:text-gray-900 border rounded-lg px-4 py-2" onClick={() => setIsMenuOpen(false)}>Login</Link>
+            <Link href="/login" className="text-white text-base border rounded-full font-dmSans font-medium  bg-loginColor hover:bg-red-700 px-9 py-2" onClick={() => setIsMenuOpen(false)}>Login</Link>
           </nav>
         </div>
       )}

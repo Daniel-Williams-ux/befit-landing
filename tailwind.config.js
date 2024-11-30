@@ -23,9 +23,13 @@ module.exports = {
         circlebg: "#F4F8FC",
         hybridColor: "#6C82A3",
         questionColor: "#0066F5",
+        loginColor: "#E15A5A",
+        formColor: "#0C0A09",
+        helpColor: "#808080",
       },
       fontFamily: {
         dmSans: ['DM Sans', 'sans-serif'],  // Adds DM Sans as the default sans font
+        archivoSemi: ['"Archivo SemiExpanded"', 'sans-serif'],
       },
     },
   },
