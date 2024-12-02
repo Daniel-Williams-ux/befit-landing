@@ -12,13 +12,13 @@ function LoginPage() {
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center p-4">
       {/* Step Section */}
-      <div className="bg-white text-center mb-6 shadow-lg rounded-lg p-3 w-full max-w-xl">
+      <div className="bg-white text-center mb-6 shadow-lg rounded-lg p-3 w-full max-w-lg sm:max-w-xl">
         <p className="text-xs font-archivoSemi font-normal text-gray-600">STEP 1/5</p>
         <h1 className="text-sm font-medium font-archivoSemi text-black">Authentication</h1>
       </div>
 
       {/* Main Form Section */}
-      <div className="bg-white shadow-lg rounded-lg p-6 w-full max-w-xl space-y-6">
+      <div className="bg-white shadow-lg rounded-lg p-6 w-full max-w-lg sm:max-w-xl space-y-6">
         {/* Title */}
         <h2 className="text-left text-xl font-bold font-archivoSemi text-formColor">Let’s get you in</h2>
 
@@ -31,7 +31,7 @@ function LoginPage() {
             type="email"
             id="email"
             placeholder="Enter your email"
-            className="w-full p-3 border border-gray-300 text-xs text-headerColor font-archivoSemi  rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
+            className="w-full p-3 border border-gray-300 text-xs text-headerColor font-archivoSemi rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
           />
         </div>
 
@@ -66,7 +66,7 @@ function LoginPage() {
       {/* Continue with Google */}
       <a
         href="/api/auth/google"
-        className="bg-white max-w-xl flex items-center justify-center mt-6 space-x-2 shadow-lg rounded-lg p-3 w-full"
+        className="bg-white max-w-lg sm:max-w-xl flex items-center justify-center mt-6 space-x-2 shadow-lg rounded-lg p-3 w-full"
       >
         <Image src={GoogleImage} alt="Google" className="w-6 h-6" />
         <p className="text-base font-archivoSemi font-medium text-formColor">Continue with Google</p>
